@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        applicationId "com.myhome.wh.nbakk"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //动态链接库文件配置（聚合）
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/juhe_sdk_v_2_7.jar')
+    compile files('libs/fastjson-1.1.28.jar')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:gridlayout-v7:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile files('libs/xUtils-2.6.2.jar')
+}

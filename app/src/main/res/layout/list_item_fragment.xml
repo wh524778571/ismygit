@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/rounded_background"
+    android:orientation="vertical">
+
+    <!--top-->
+    <LinearLayout
+        android:id="@+id/foot_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/player1logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:src="@drawable/xlistview_arrow" />
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="3dp"
+            android:text="player1" />
+
+        <TextView
+            android:id="@+id/vs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vs"
+            android:textColor="@color/common_red" />
+
+        <ImageView
+            android:id="@+id/player2logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingRight="3dp"
+            android:src="@drawable/xlistview_arrow" />
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="3dp"
+            android:text="player2" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:paddingRight="3dp"
+            android:text="time" />
+    </LinearLayout>
+    <!--cent-->
+    <LinearLayout
+        android:id="@+id/layout_centent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/player1logobig"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="5dp"
+            android:src="@drawable/xlistview_arrow" />
+
+        <TextView
+            android:id="@+id/player1url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="player1url" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="3dp"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="status" />
+
+        <ImageView
+            android:id="@+id/player2logobig"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp"
+            android:src="@drawable/xlistview_arrow" />
+        <TextView
+            android:id="@+id/player2url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="player2url" />
+    </LinearLayout>
+    <!--bot-->
+    <LinearLayout
+        android:id="@+id/bot_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#bc1243"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+       >
+
+        <TextView
+            android:id="@+id/link1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="link1text"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/link1url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="link1url" />
+
+        <TextView
+            android:id="@+id/m_link1url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m_link1url" />
+
+        <TextView
+            android:id="@+id/link2text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="link2text"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/link2url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="link2url" />
+
+        <TextView
+            android:id="@+id/m_link2url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m_link2url" />
+    </LinearLayout>
+</LinearLayout>
